@@ -59,6 +59,7 @@
 
 2. class Topic
     атрибуты : 
+    
         массив dictionary состоящий из MissedLetter, 
         
         len_dic его длина
@@ -71,6 +72,7 @@
         
         errors - количество ошибок пользователя
     методы:
+    
         __init__
         
         go начать работу с топиком
@@ -81,6 +83,7 @@
         
         get_rules_of_topic - выслать правила топика
     наследование:
+    
         class Topic2
         
         class Topic3
@@ -88,6 +91,7 @@
         class Topic4
         
 Инструкция по запуску программы
+
         git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404.git rus_bot
         
         cd rus_bot
