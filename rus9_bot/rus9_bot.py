@@ -10,7 +10,8 @@ bot = telebot.TeleBot(token)
 '''
 создаем словари для каждого топика
 '''
-dict_topic1 = topic.Topic('text_files/missedletter.txt', 'asserts/dictionary.txt',
+f = open('asserts/missedletter.txt')
+dict_topic1 = topic.Topic('asserts/missedletter.txt', 'asserts/dictionary.txt',
                           RulesOfBot.rules_of_topic1)
 dict_topic3 = topic.Topic3('asserts/fused_task.txt', 'asserts/fused_right.txt',
                             RulesOfBot.rules_of_topic2)
