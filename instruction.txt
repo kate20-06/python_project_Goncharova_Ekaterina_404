@@ -1,0 +1,4 @@
+git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404.git rus_bot
+cd rus_bot
+.\Scripts\activate
+python rus9_bot
