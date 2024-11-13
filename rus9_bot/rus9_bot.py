@@ -4,8 +4,9 @@ from telebot import  types
 import navigation_function
 import topic
 import RulesOfBot
+from config import token
 flag = dict()
-bot = telebot.TeleBot('6176176935:AAGhvGBt18ng0n_PtaA2g4InmvGFfG9LAZI')
+bot = telebot.TeleBot(token)
 '''
 создаем словари для каждого топика
 '''
@@ -13,7 +14,7 @@ dict_topic1 = topic.Topic('text_files/missedletter.txt', 'text_files/dictionary.
                           RulesOfBot.rules_of_topic1)
 dict_topic3 = topic.Topic3('text_files/fused_task.txt', 'text_files/fused_right.txt',
                             RulesOfBot.rules_of_topic2)
-dict_topic4 = topic.Topic4('text_files/vvodnye.txt', 'text_files/not_vvod.txt',
+dict_topic4 = topic.Topic4('text_files/introductory.txt', 'text_files/not_introductory.txt',
                             RulesOfBot.rules_of_topic4)
 dict_topic2 = topic.Topic2('text_files/pre-pri-prop.txt', 'text_files/pre-pri.txt',
                             'text_files/pre-pri_let.txt', RulesOfBot.rules_of_topic3)
@@ -143,5 +144,4 @@ def get_user_text(message):
         elif flag[Id] == 2:
             dict_topic2.get_task(message)
         else:
-            dict_topic4.get_task(message)  
-bot.polling(none_stop=True)
+            dict_topic4.get_task(message)
