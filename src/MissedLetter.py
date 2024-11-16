@@ -24,6 +24,6 @@ class MisLetTopic2(MissedLetter):
         super().__init__(word, cor_spel)
         self.missing_letter = let
     def correctness_answer(self, user_word):
-        if self.missing_letter == user_word.lower() or (self.correct_spelling).lower() == user_word.lower():
+        if self.missing_letter.lower() == user_word.lower() or (self.correct_spelling).lower() == user_word.lower():
             return True
         return False

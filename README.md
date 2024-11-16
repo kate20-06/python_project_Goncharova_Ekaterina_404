@@ -75,9 +75,9 @@
         class Topic2
         class Topic3
         class Topic4
-0) `git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404` <br>
-0.5) `git switch development` <br>
-1) `python -m pip install requirements.txt` <br>
-2) `cd rus9_bot` <br>
-3) `python main.py` <br>
-4) `@rus9_bot`
+1) `git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404` <br>
+2) `git switch development` <br>
+3) `python -m pip install requirements.txt` <br>
+4) `добавьте файл .env в корень проекта. напишите в него TOKEN=<ваш_токен>`<br>
+5) `cd src` <br>
+6) `python main.py` <br>

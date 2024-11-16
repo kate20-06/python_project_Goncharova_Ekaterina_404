@@ -4,17 +4,11 @@ bot = telebot.TeleBot('6176176935:AAGhvGBt18ng0n_PtaA2g4InmvGFfG9LAZI')
 
 def help(message):    
     bot.send_message(message.chat.id, 'Наш бот создан для '
-        'отработки правописания слов с непроверяемой '
-        'гласной в корне', parse_mode='html')
+        'отработки подготовки к ЕГЭ по русскому языку', parse_mode='html')
     
-    bot.send_message(message.chat.id, 'Бот будет предлагать\
-        слова с пропусками. Необходимо написать\
-        сообщением эти слова, заменяя пропуски\
-        необходимыми буквами', parse_mode='html')
+    bot.send_message(message.chat.id, 'Введите /go и выберите тему, которую хотите отработать', parse_mode='html')
     
-    bot.send_message(message.chat.id, 'Бот напишет good, '
-        'если ошибок нет. Иначе бот сообщит '
-        'правильное написание.', parse_mode='html')
+    bot.send_message(message.chat.id, 'Введите /give_rules, чтобы получить материалы с правильными ответами', parse_mode='html')
     
     bot.send_message(message.chat.id, 'Чтобы начать или '
         'закончить практику, можно воспользоваться '

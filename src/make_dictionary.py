@@ -83,12 +83,12 @@ def MakeDict4(file_name1, file_name2):
     dic = open(file_name1, encoding='utf-8')
     dictionary = []
     for i in dic:
-        dictionary.append(MissedLetter(i[:-1], 'Yes'))
+        dictionary.append(MissedLetter(i[:-1], 'yes'))
     dic.close()
 
     dic = open(file_name2, encoding='utf-8')
     for i in dic:
-        dictionary.append(MissedLetter(i[:-1], 'No'))
+        dictionary.append(MissedLetter(i[:-1], 'no'))
     dic.close()
     
     return dictionary
