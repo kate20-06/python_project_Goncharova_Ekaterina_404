@@ -10,18 +10,18 @@ bot = telebot.TeleBot(token)
 '''
 создаем словари для каждого топика
 '''
-dict_topic1 = topic.Topic('asserts/missedletter.txt',
-                           'asserts/dictionary.txt',
+dict_topic1 = topic.Topic('./asserts/missedletter.txt',
+                           './asserts/dictionary.txt',
                           RulesOfBot.rules_of_topic1)
-dict_topic3 = topic.Topic3('asserts/fused_task.txt',
-                           'asserts/fused_right.txt',
+dict_topic3 = topic.Topic3('./asserts/fused_task.txt',
+                           './asserts/fused_right.txt',
                             RulesOfBot.rules_of_topic3)
-dict_topic4 = topic.Topic4('asserts/introductory.txt',
-                           'asserts/not_introductory.txt',
+dict_topic4 = topic.Topic4('./asserts/introductory.txt',
+                           './asserts/not_introductory.txt',
                             RulesOfBot.rules_of_topic4)
-dict_topic2 = topic.Topic2('asserts/pre-pri-prop.txt',
-                           'asserts/pre-pri.txt',
-                            'asserts/pre-pri_let.txt',
+dict_topic2 = topic.Topic2('./asserts/pre-pri-prop.txt',
+                           './asserts/pre-pri.txt',
+                            './asserts/pre-pri_let.txt',
                             RulesOfBot.rules_of_topic2)
 
 @bot.message_handler(commands=['start'])
