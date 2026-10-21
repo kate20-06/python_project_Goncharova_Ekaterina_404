@@ -31,7 +31,7 @@
 
         3. give_a_task Предложить слово / задание. Дать ответ о верности выполнения задания
 
-        4. output_the_result программа завершается после введения команды стоп или из-за конца заданий и выводит  пользователю количество его ошибок, а так же где были совершены эти ошибки
+        4. output_the_result программа завершается после введения команды стоп или из-за конца заданий и выводит пользователю количество его ошибок, а так же где были совершены эти ошибки
 
         5. give_rules отправить пользователю файл с правильным написанием слов
 
@@ -75,9 +75,14 @@
         class Topic2
         class Topic3
         class Topic4
-1) `git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404` <br>
-2) `git switch development` <br>
-3) `python -m pip install requirements.txt` <br>
-4) `добавьте файл .env в корень проекта. напишите в него TOKEN=<ваш_токен>`<br>
-5) `cd src` <br>
-6) `python main.py` <br>
+
+Инструкция по запуску программы
+
+1) `git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404`  
+2) `git switch development`  
+3) `python -m pip install requirements.txt`  
+4) `добавьте файл .env в корень проекта. напишите в него TOKEN=<ваш_токен>`  
+5) `cd src`  
+6) `python main.py`
+
+Название бота @rus9_bot
