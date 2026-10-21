@@ -31,7 +31,7 @@
 
         3. give_a_task Предложить слово / задание. Дать ответ о верности выполнения задания
 
-        4. output_the_result программа завершается после введения команды стоп или из-за конца заданий и выводит  пользователю количество его ошибок, а так же где были совершены эти ошибки
+        4. output_the_result программа завершается после введения команды стоп или из-за конца заданий и выводит пользователю количество его ошибок, а так же где были совершены эти ошибки
 
         5. give_rules отправить пользователю файл с правильным написанием слов
 
@@ -59,45 +59,30 @@
 
 2. class Topic
     атрибуты : 
-    
         массив dictionary состоящий из MissedLetter, 
-        
         len_dic его длина
-        
         users_progress массив в котором отмечено какие слова уже были даны человеку
-        
         rules_of_topic - правила топика
-        
         rules - правила написания заданий топика
-        
         errors - количество ошибок пользователя
     методы:
-    
         __init__
-        
         go начать работу с топиком
-        
         get_task - дать задание
-        
         get_rules - выслать файл с правильным написанием
-        
         get_rules_of_topic - выслать правила топика
     наследование:
-    
         class Topic2
-        
         class Topic3
-        
         class Topic4
-        
+
 Инструкция по запуску программы
 
-        git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404.git rus_bot
-        
-        cd rus_bot
-        
-        .\Scripts\activate
-        
-        python rus9_bot
-        
-        название бота @rus9_bot
+1) `git clone https://github.com/kate20-06/python_project_Goncharova_Ekaterina_404`  
+2) `git switch development`  
+3) `python -m pip install requirements.txt`  
+4) `добавьте файл .env в корень проекта. напишите в него TOKEN=<ваш_токен>`  
+5) `cd src`  
+6) `python main.py`
+
+Название бота @rus9_bot
